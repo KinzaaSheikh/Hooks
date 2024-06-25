@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 
 import { initialItems } from './utils';
+import UseCallBack from './callback/UseCallBack';
 
 interface DemoProps {}
 
@@ -14,6 +15,7 @@ function Demo({}: DemoProps) {
   );
 
   return (
+   <>
     <div className='tutorial'>
       <h1>Count: {count}</h1>
       <h1>Selected Item: {selectedItem?.id}</h1>
@@ -21,6 +23,8 @@ function Demo({}: DemoProps) {
         Increment
       </button>
     </div>
+    <UseCallBack />
+   </>
   );
 }
 
